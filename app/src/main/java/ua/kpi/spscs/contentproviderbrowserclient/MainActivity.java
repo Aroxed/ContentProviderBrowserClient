@@ -1,14 +1,12 @@
 package ua.kpi.spscs.contentproviderbrowserclient;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     TextView txv;
@@ -28,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse("content://com.random/users");
         Cursor c = getContentResolver().query(uri, projection, null, null, null);
         str += "Count: " + c.getCount() + "\n";
-        while(c.moveToNext()) {
+        while (c.moveToNext()) {
             str += c.getString(0) + "---";
             String url = c.getString(1);
             str += url + "\n";

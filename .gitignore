@@ -13,3 +13,12 @@
 .externalNativeBuild
 .cxx
 local.properties
+/.idea/.gitignore
+/.idea/.name
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/app/src/androidTest/java/ua/kpi/spscs/contentproviderbrowserclient/ExampleInstrumentedTest.java
+/app/src/test/java/ua/kpi/spscs/contentproviderbrowserclient/ExampleUnitTest.java
